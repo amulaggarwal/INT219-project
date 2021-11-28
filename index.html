@@ -16,6 +16,8 @@
 
 <!-- Iconsout CDN -->
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+<!-- SWIPER JS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- ==========================NAVBAR====================== -->
@@ -385,9 +387,9 @@
 
 <section class="testimonials">
     <h1>Testimonials</h1>
-    <div class="container">
-        <div class="carousel">
-            <div class="testimonial">
+    <div class="container swiper">
+        <div class="carousel swiper-wrapper">
+            <div class="testimonial swiper-slide">
                 <div class="head">
                     <div class="profile-area">
                         <div class="avatar">
@@ -409,7 +411,7 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore ut
                      neque deserunt dolores facilis accusamus illum iste optio illo.</p>
             </div>
-            <div class="testimonial">
+            <div class="testimonial swiper-slide">
                 <div class="head">
                     <div class="profile-area">
                         <div class="avatar">
@@ -432,7 +434,7 @@
                      neque deserunt dolores facilis accusamus illum iste optio illo.</p>
             </div>
             <!-- ====END OF TESTIMONIAL========= -->
-            <div class="testimonial">
+            <div class="testimonial swiper-slide">
                 <div class="head">
                     <div class="profile-area">
                         <div class="avatar">
@@ -455,7 +457,7 @@
                      neque deserunt dolores facilis accusamus illum iste optio illo.</p>
             </div>
             <!-- ====END OF TESTIMONIAL========= -->
-            <div class="testimonial">
+            <div class="testimonial swiper-slide">
                 <div class="head">
                     <div class="profile-area">
                         <div class="avatar">
@@ -478,10 +480,15 @@
                      neque deserunt dolores facilis accusamus illum iste optio illo.</p>
             </div>
             <!-- ====END OF TESTIMONIAL========= -->
+        </div>  
+        <div class="swiper-scrollbar">
+            <div class="swiper-scrollbar-drag"></div>
         </div>
-        
-        
     </div>
 </section>
+
+<!-- SWIPER JS  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>
