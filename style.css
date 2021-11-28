@@ -22,6 +22,14 @@
     text-decoration: none;
 
 }
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--color-primary-light);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color-primary);
+}
 html{
     font-size: 15px;
     scroll-behavior: smooth;
@@ -112,6 +120,11 @@ nav{
     top: 0;
     z-index: 2;
     border-bottom: 1px solid var(--color-light);
+}
+
+nav.show-box-shadow{
+    box-shadow: 0 0.6rem 1rem var(--color-primary-light);
+    border: none;
 }
 
 
@@ -294,6 +307,10 @@ section.about p{
 section.about .container .read-more-content{
     display: none;
 }
+/*toogle read more content using JS  */
+section.about .container .read-more-content.show-content{
+    display: block;
+}
 
 section.about .container .read-more{
     display: block;
@@ -312,7 +329,7 @@ section.skills .container{
     width: 50%;
 }
 
-section.skills .skill{
+section.skills .container .skill{
     margin-bottom: 1rem;
 }
 
@@ -332,6 +349,13 @@ section.skills .skill .left{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+section.skills .skill .items{
+    display: none;
+}
+/* for java script show/hide items */
+section.skills .container .skill .items.show-items{
+    display: block;
 }
 
 section.skills .skill .item{
@@ -680,9 +704,7 @@ footer .copyright{
 
 
 /* ================NAV BAR================== */
-nav{
-    box-shadow: 0 1rem 1rem rgba(0,0,0,0.1);
-}
+
 nav h3{
     margin-left: 1rem;
 }
@@ -839,7 +861,7 @@ section.landing .profile-area .outer-circle span:nth-child(1){
      flex-direction: column;
      text-align: center;
      gap: 1.4rem;
-     
+
  }
 
 }
